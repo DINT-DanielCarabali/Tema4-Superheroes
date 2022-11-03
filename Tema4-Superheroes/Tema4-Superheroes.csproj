@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="HeroeConverter.cs" />
     <Compile Include="VengadorConverter.cs" />
+    <Compile Include="vista-modelo\MainWindowVM.cs" />
     <Compile Include="XmenConverter.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
