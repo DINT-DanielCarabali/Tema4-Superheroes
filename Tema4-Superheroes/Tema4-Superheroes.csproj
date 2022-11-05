@@ -55,10 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="HeroeConverter.cs" />
-    <Compile Include="VengadorConverter.cs" />
+    <Compile Include="convertidores\HeroeConverter.cs" />
+    <Compile Include="convertidores\VengadorConverter.cs" />
+    <Compile Include="convertidores\XmenConverter.cs" />
     <Compile Include="vista-modelo\MainWindowVM.cs" />
-    <Compile Include="XmenConverter.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
