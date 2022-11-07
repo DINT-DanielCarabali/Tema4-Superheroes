@@ -115,20 +115,24 @@
                 </DataTrigger>
             </Style.Triggers>
         </Style>
+
+        <Style TargetType="{x:Type StackPanel}">
+            <Setter Property="Orientation" Value="Horizontal"/>
+        </Style>
     </Window.Resources>
 
     <DockPanel x:Name="contenedorDockPanel" Style="{StaticResource contenedorVentana}">
         <DockPanel DockPanel.Dock="Top" LastChildFill="False">
             <TextBlock x:Name="nombreTextBlock" Style="{StaticResource nombreSuperheroe}"/>
-            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
-                <StackPanel Orientation="Horizontal">
+            <StackPanel DockPanel.Dock="Right">
+                <StackPanel>
                     <Image x:Name="avengersImage" Style="{StaticResource vengadorLogo}" Source="./assets/avengers.png"/>
                     <Image x:Name="xmenImage" Style="{StaticResource xmenLogo}" Source="./assets/xmen.png"/>
                 </StackPanel>
             </StackPanel>
         </DockPanel>
         
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
             <Image x:Name="anteriorImage" Style="{StaticResource botonesAnteriorSiguiente}" MouseLeftButtonDown="AnteriorImage_MouseLeftButtonDown"/>
             <TextBlock Text="{Binding Path=NumeroActual}" Style="{StaticResource numerosBarra}"/>
             <TextBlock Style="{StaticResource numerosBarra}">/</TextBlock>
