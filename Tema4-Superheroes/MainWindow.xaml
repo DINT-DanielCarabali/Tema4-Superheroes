@@ -7,9 +7,6 @@
         mc:Ignorable="d"
         Title="Superhéroes" Height="500" Width="700" MinHeight="500" MinWidth="700" Icon="./assets/shield.ico">
     <Window.Resources>
-        <local:VengadorConverter x:Key="vengadorConversor"/>
-        <local:XmenConverter x:Key="xmenConversor"/>
-
         <Style TargetType="{x:Type TextBlock}" x:Key="nombreSuperheroe">
             <Setter Property="DockPanel.Dock" Value="Left"/>
             <Setter Property="Foreground" Value="White"/>
