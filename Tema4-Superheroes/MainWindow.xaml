@@ -132,7 +132,7 @@
             </StackPanel>
         </DockPanel>
         
-        <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center">
             <Image x:Name="anteriorImage" Style="{StaticResource botonesAnteriorSiguiente}" MouseLeftButtonDown="AnteriorImage_MouseLeftButtonDown"/>
             <TextBlock Text="{Binding Path=NumeroActual}" Style="{StaticResource numerosBarra}"/>
             <TextBlock Style="{StaticResource numerosBarra}">/</TextBlock>
